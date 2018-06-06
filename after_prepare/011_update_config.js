@@ -316,7 +316,7 @@ var platformConfig = (function() {
         platform = platform.trim().toLowerCase();
         platformConfig.updatePlatformConfig(platform);
       } catch (e) {
-        process.stdout.write(e);
+        process.stdout.write(e.message);
       }
     });
   }
